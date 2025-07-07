@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora el PORFOLIO más recientes de Eric</title>
+    <style>
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+        }
+        a {text-decoration: none; color: #fff;}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px 0 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 40px;
+        }
+        .title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            color: #ccc;
+            margin-bottom: 30px;
+            max-width: 500px;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+            margin-bottom: 40px;
+            flex: 1.2;
+            min-width: 320px;
+            justify-items: center;
+        }
+        .feature-card {
+            background: linear-gradient(135deg, #0a3cff 60%, #0a3c7e 100%);
+            border-radius: 24px;
+            padding: 32px 20px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 24px 0 #0008;
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 260px;
+            height: 170px;
+            min-width: 220px;
+            min-height: 150px;
+            box-sizing: border-box;
+        }
+        .feature-card:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 8px 32px 0 #000a;
+        }
+        .feature-img {
+            width: 120px;
+            height: 80px;
+            background: #fff2;
+            border-radius: 12px;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            color: #fff;
+        }
+        .feature-title {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        .actions {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background: #2563eb;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #1d4ed8;
+        }
+        .emoji-grande {
+            font-size: 1.5em;
+            vertical-align: -0.25em;
+            line-height: 1;
+            display: inline-block;
+            position: relative;
+            top: -7px;
+        }
+        .footer {
+            margin-top: 40px;
+            color: #b3b3b3;
+            font-size: 1rem;
+            text-align: left;
+        }
+        .pagination {
+            display: flex;
+            gap: 8px;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+        .pagination-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #222;
+            display: inline-block;
+        }
+        .pagination-dot.active {
+            background: #0a3cff;
+        }
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column !important;
+                gap: 20px !important;
+                padding: 20px 5px 0 5px !important;
+                align-items: center !important;
+                justify-content: center !important;
+            }
+            .features-grid {
+                gap: 18px;
+                justify-items: center;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .feature-card {
+                width: 44vw;
+                max-width: 320px;
+                min-width: 140px;
+                height: 160px;
+                min-height: 120px;
+                padding: 18px 8px 12px 8px;
+            }
+            .title {
+                font-size: 2rem;
+                text-align: center;
+            }
+            .subtitle {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .actions {
+                justify-content: center;
+            }
+            .pagination {
+                justify-content: center !important;
+            }
+            .footer {
+                text-align: center;
+            }
+            [style*="flex:1;"], [style*="flex:1.2;"] {
+                max-width: 100% !important;
+                min-width: 0 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="flex:1; min-width:260px; max-width:500px;">
+            <div class="title">"Explora el <span style="color:#0a3cff">Porfolio</span> más recientes de Eric"</div>
+            <div class="subtitle">Soy Eric Olivares Busco crecer haciendo lo que me gusta y
+                 lograr una estabilidad económica, siempre aportando lo mejor de mí en cada
+                 proyecto. Les presento nuevas y emocionantes características 
+                 hechas por su servidor. Hace clic en un mosaico para explorar algunas de
+                 las características más recientes y las herramientas integradas que lo
+                 ayudan a visualizar imagenes de forma dinamica, ser más productivo y mantenerse
+                 organizado.</div>
+            <div class="actions">
+                <a href="CV.HTML" class="btn">Habilidades/CV</a>
+                <a href="Formulario.html" class="btn"><span class="emoji-grande"></span>Contacto→</a>
+                <a href="Index.html" class="btn">Linktree</a>
+            </div>
+            <div class="pagination" style="justify-content: flex-start;">
+                <span class="pagination-dot"></span>
+                <span class="pagination-dot"></span>
+                <span class="pagination-dot"></span>
+                <span class="pagination-dot"></span>
+                <span class="pagination-dot"></span>
+                <span class="pagination-dot active"></span>
+                <span class="pagination-dot"></span>
+            </div>
+            <div class="footer">
+                Estas son las novedades de Eric Olivares en Desarrollo web 🛡️🛡️🛡️<br>
+                <span style="font-size:0.9em;">⚔️ Hice lo mejor que pude...no me repruebe. ⚔️ </span>
+            </div>
+        </div>
+        <div style="flex:1.2; min-width:320px;">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-img">🔁</div>
+                    <div class="feature-title"><a href="1-Transición.html">Transición</a></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">♾️</div>
+                    <div class="feature-title"><a href="2-Animación.html">Animación</a></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">🔘</div>
+                    <div class="feature-title"><a href="Entregar Botonera.html">Botones</a></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">📲</div>
+                    <div class="feature-title"><a href="Entregar Calculadora.html">Calculadora</a></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">🖥️</div>
+                    <div class="feature-title"><a href="Entregar Grid.html">Grid</a></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">👓</div>
+                    <div class="feature-title"><a href="Entregar Slider Touch.html">Slider Touch</a></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">👓</div>
+                    <div class="feature-title"><a href="Entregar Slider.html">Slider</a></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">☣️</div>
+                    <div class="feature-title"><a href="Entregar Letras.html">Letras</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

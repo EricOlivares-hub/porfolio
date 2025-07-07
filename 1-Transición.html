@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como hacer la pagína responsive con mediaqueries y sin unidades relativas</title>
+    <style>
+        /* *{padding: 0%; margin: 0%;} */
+        
+        .box {width: 100px; height: 100px; background-color: blue;}
+        .box:hover {background-color: red;}
+
+        .box1 {width: 250px; height: 250px; background-color: red;}
+        .box1:hover {background-color: blue; transform: translateX(100%);}
+
+        .box2 {width: 100px; height: 100px; background-color: blue;
+               transition-property: transform, background-color;
+               transition-duration: 1s, 2s;
+               transition-timing-function: ease-in-out, linear;}
+        .box2:hover {background-color: red; transform: translateX(100%);}
+
+      .box3 {width: 250px; height: 250px;               
+              transition-property: transform, background-color;
+              transition-duration: 1s; 
+              transition-delay: 0.1s;}
+.box3:hover {background-color: salmon; 
+             transform: translate(100%);}
+            /* width: 800px; */  /*cambia el ancho al pasar el ratón por encima*/
+        
+      .box4 {width: 250px; height: 250px; background-color: blue;              
+             transition-property: transform, background-color;
+             transition-duration: 1s; 
+             transition-delay: 0.1s;}
+.box4:hover {background-color: salmon;
+            transform: translate(100%);}
+
+
+      .box5 {width: 250px; height: 250px; background-color: greenyellow;
+             transition-property: transform, background-color; /*propiedades que se van a animar*/
+             transition-duration: 2s, 1s;                      /*duración de las animaciones*/
+             transition-timing-function: ease-in-out, linear;} /*tipo de animaciones*/
+.box5:hover {background-color: salmon;
+             transform: rotate(360deg) scale(1.5);} /*transformación al pasar el ratón por encima*/
+
+        .box6 {width: 250px; height: 250px; background-color: greenyellow;
+               transition: width 1s ease, height 1s ease;}
+
+.box6:hover {width: 100px; height: 100px;}
+        
+    </style>
+</head>
+    <!--Transition solo marca de un estado A a un estado B, mientras que Animation te permite modicar
+    lo que hace en cada momento. Ademas para activarlo hay que hacer alguna interacción con el cursor-->
+<body>
+    <div>
+        <div class="box">0</div>
+    </div>
+
+    <div>
+        <div class="box1">1</div>
+    </div>
+
+    <div>
+        <div class="box2">2</div>
+    </div>
+
+    <div>
+        <div class="box3">3</div>
+    </div>
+
+    <div class="contenedor1">
+        <div class="box4">4</div>
+    </div>
+
+    <div>
+        <div class="box5">5</div>
+    </div>
+
+    <div>
+        <div class="box6">6</div>
+    </div>
+
+</body>
+
+</html>
